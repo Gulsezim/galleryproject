@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" th:href = "@{/css/gallery.css}" />
+</head>
+<body>
+<div id="header">
+ <div class="dropdown">
+    <button class="dropbtn">ЯЗЫК</button>
+    <div class="dropdown-content">
+        <a>Русский</a>
+        <a>Қазақша</a>
+        <a>English</a>
+    </div>
+ </div>
+
+<div class="f"><p><h3>ИНТЕРНЕТ-МАГАЗИН КАРТИН   "Sentiment"</h3></p></div>
+
+
+<div id="mainmenu">
+    <ul>
+        <li><a class="active" href="">ГЛАВНАЯ</a></li>
+        <li><a href="/dostavka.html" >ДОСТАВКА</a></li>
+        <li><a href="">ГАРАНТИИ</a></li>
+        <li><a href="">О НАС</a></li>
+        <li><a class="active" href="">КОНТАКТЫ </a></li>
+
+    </ul>
+</div>
+</div>
+<br>
+<br>
+<div id="content">
+<table align="center">
+    <tr>
+    <td><img src="/css/picture1.jpg" width="300" height="200"/></td>
+    <td><img src="/css/picture2.jpg" width="300" height="200"/></td>
+    <td><img src="/css/picture3.jpg" width="300" height="200"/></td>
+</tr>
+    <tr>
+        <td>Цветущие ветки</td>
+        <td>Звездная ночь</td>
+        <td>Парусник</td>
+    </tr>
+    <tr>
+        <td>Винсент Ван Гог</td>
+        <td>Винсент Ван Гог</td>
+        <td>Винсент Ван Гог</td>
+    </tr>
+    <tr>
+        <td><img src="/css/picture4.jpg" width="300" height="200"/></td>
+        <td><img src="/css/picture5.jpg" width="300" height="200"/></td>
+        <td><img src="/css/picture7.jpg" width="300" height="200"/></td>
+    </tr>
+    <tr>
+        <td>Поцелуй</td>
+        <td>Эмилия Флеге</td>
+        <td>Девы</td>
+    </tr>
+    <tr>
+        <td>Густав Климт</td>
+        <td>Густав Климт</td>
+        <td>Густав Климт</td>
+    </tr>
+    </table>
+<br>
+<br>
+</div>
+
+<div id="menu"></div>
+
+
+<form action="/demo/add" method="GET" modelAttribute="customer">
+    <table align="center">
+        <tr>
+            <div class="f2"><p>РЕГИСТРАЦИЯ</p></div>
+        </tr>
+        <tr>
+            <td>Имя </td>
+            <td><input type="text" id="firstnamee" name="firstname"><br></td>
+        </tr>
+        <tr>
+            <td>Фамилия</td>
+            <td><input type="text" id="lastnamee" name="lastname"><br></td>
+        </tr>
+        <tr>
+            <td>Почта</td>
+            <td><input type="text" id="emaile" name="email"><br></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="ok" id="button"></td>
+        </tr>
+    </table>
+
+</form>
+</div>
+
+</body>
+</html>
